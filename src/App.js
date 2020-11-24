@@ -32,9 +32,10 @@ function App() {
     
     if (!myItem) {
         if (!multiSelect) {
-            setSelections([item]);
+          // If single select only (set multiSelect to false)
+          setSelections([item]);
         } else if (multiSelect) {
-            setSelections([...selections, item]);
+          setSelections([...selections, item]);
         }
     } else {
         // Remove item that is already selected
