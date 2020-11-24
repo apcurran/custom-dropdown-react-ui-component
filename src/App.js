@@ -1,6 +1,7 @@
 import { useState } from "react";
 
 import Dropdown from "./components/Dropdown";
+import DropdownList from "./components/DropdownList";
 
 function App() {
   const items = [
@@ -20,7 +21,10 @@ function App() {
 
   return (
     <div className="App">
+      <div className="wrapper">
         <Dropdown title="Select Book" items={items} multiSelect={true} />
+        <DropdownList />
+      </div>
     </div>
   );
 }
