@@ -1,6 +1,6 @@
 # Custom Dropdown React UI Component
 
-[View Live Demo]()
+[View Live Demo](https://apcurran.github.io/custom-dropdown-react-ui-component/)
 
 ## Features:
 
