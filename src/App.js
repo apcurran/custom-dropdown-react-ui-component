@@ -19,7 +19,7 @@ function App() {
     },
     {
       id: 3,
-      value: "The Importance of Being Earnest"
+      value: "The Picture of Dorian Gray"
     }
   ];
 
@@ -32,9 +32,10 @@ function App() {
     
     if (!myItem) {
         if (!multiSelect) {
-          // If single select only (set multiSelect to false)
+          // If single select only (multiSelect set to false)
           setSelections([item]);
         } else if (multiSelect) {
+          // multiSelect set to true
           setSelections([...selections, item]);
         }
     } else {
