@@ -1,10 +1,9 @@
-import React from 'react';
-
-function DropdownListItem() {
+function DropdownListItem({ item, isItemInSelections, handleClick }) {
     return (
-        <div>
-            Dropdown list item
-        </div>
+        <li onClick={() => handleClick(item)} className="dropdown-list__item">
+            <span className="dropdown-list__item__value">{item.value}</span>
+            <span className="dropdown-list__item__selected-status">{isItemInSelections(item)}</span>
+        </li>
     );
 }
 

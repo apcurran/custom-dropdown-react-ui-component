@@ -1,10 +1,13 @@
 import React from 'react';
+import DropdownListItem from "./DropdownListItem";
 
-function DropdownList() {
+function DropdownList({ items, handleClick, isItemInSelections }) {
     return (
-        <div>
-            Dropdown List
-        </div>
+        <ul className="dropdown-list">
+            {items.map(item => (
+                <DropdownListItem item={item} handleClick={handleClick} key={item.id} isItemInSelections={isItemInSelections} />
+            ))}
+        </ul>
     );
 }
 
