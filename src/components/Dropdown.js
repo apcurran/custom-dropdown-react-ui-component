@@ -27,15 +27,10 @@ function Dropdown({ title, items = [], multiSelect = false }) {
     
     function isItemInSelections(item) {
         const isPresent = selections.find(selection => selection.id === item.id);
-        
-        if (isPresent) {
-            return (
-                <svg className="check-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path></svg>
-            );
-        }
+        const showOrHideClass = isPresent ? "check-icon" : "check-icon--hide check-icon";
 
         return (
-            <svg className="check-icon--hide check-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path></svg>
+            <svg className={showOrHideClass} fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path></svg>
         );
     }
     
