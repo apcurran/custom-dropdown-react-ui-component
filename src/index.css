@@ -77,3 +77,14 @@ body {
   font-weight: 700;
   color: #374151;
 }
+
+.check-icon {
+  width: 24px;
+  height: 24px;
+  stroke: #64748B;
+}
+
+.check-icon--hide {
+  opacity: 0;
+  pointer-events: none;
+}
