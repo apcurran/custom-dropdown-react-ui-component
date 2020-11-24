@@ -59,7 +59,7 @@ function App() {
       <div className="wrapper">
         <Dropdown title="Select Book" open={open} toggleDropdown={toggleDropdown} />
         {open ? (
-          <DropdownList items={items} handleClick={handleClick} isItemInSelections={isItemInSelections} />
+          <DropdownList setOpen={setOpen} items={items} handleClick={handleClick} isItemInSelections={isItemInSelections} />
         ) : null}
       </div>
     </div>
