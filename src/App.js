@@ -18,7 +18,7 @@ function App() {
 
   return (
     <div className="App">
-      <Dropdown title="Select Book" items={items} />
+      <Dropdown title="Select Book" items={items} multiSelect={true} />
     </div>
   );
 }
